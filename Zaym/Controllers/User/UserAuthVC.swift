@@ -1,5 +1,5 @@
 //
-//  ClientAuthVC.swift
+//  UserAuthVC.swift
 //  Zaym
 //
 //  Created by Mikhail Lutskiy on 09.03.2018.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ClientAuthVC: UIViewController {
-
-    @IBOutlet weak var emailField: UITextField!
+class UserAuthVC: UIViewController {
+    @IBOutlet weak var loginField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboard()
         // Do any additional setup after loading the view.
     }
 
@@ -24,11 +24,11 @@ class ClientAuthVC: UIViewController {
     }
     
     @IBAction func authAction(_ sender: Any) {
-        if Checker.checkFieldsForFill(emailField.text!, passwordField.text!) {
-            let client = Client()
-            client.email = emailField.text!
-            client.password = passwordField.text!
-            client.auth()
+        if Checker.checkFieldsForFill(loginField.text!, passwordField.text!) {
+            let user = User()
+            user.login = loginField.text!
+            user.password = passwordField.text!
+            user.auth()
         } else {
             showAlertMessage(text: "Заполните все поля", title: "Ошибка")
         }

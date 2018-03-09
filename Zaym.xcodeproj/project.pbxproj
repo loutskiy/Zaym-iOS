@@ -34,6 +34,9 @@
 		A7CDF1C02052DB6E006CBECA /* ClientLoansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */; };
 		A7CDF1C22052DF40006CBECA /* ZaymCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF1C12052DF40006CBECA /* ZaymCell.xib */; };
 		A7CDF1C42052DFA8006CBECA /* ZaymCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */; };
+		A7E94A7420534A6300FE50C4 /* UserLoansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E94A7320534A6300FE50C4 /* UserLoansVC.swift */; };
+		A7E94A7620534A8300FE50C4 /* UserLoanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E94A7520534A8300FE50C4 /* UserLoanDetailVC.swift */; };
+		A7E94A7820534D3F00FE50C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E94A7720534D3F00FE50C4 /* User.swift */; };
 		D2C18791B344FD0A9E242A22 /* Pods_Zaym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EC88077F7ABFBF052267E4 /* Pods_Zaym.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoansVC.swift; sourceTree = "<group>"; };
 		A7CDF1C12052DF40006CBECA /* ZaymCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZaymCell.xib; sourceTree = "<group>"; };
 		A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaymCell.swift; sourceTree = "<group>"; };
+		A7E94A7320534A6300FE50C4 /* UserLoansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoansVC.swift; sourceTree = "<group>"; };
+		A7E94A7520534A8300FE50C4 /* UserLoanDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoanDetailVC.swift; sourceTree = "<group>"; };
+		A7E94A7720534D3F00FE50C4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EBB67EBCEBFAD880E8D782E5 /* Pods-Zaym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zaym.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zaym/Pods-Zaym.release.xcconfig"; sourceTree = "<group>"; };
 		EE6DF3B1047F966728935CD4 /* Pods-Zaym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zaym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zaym/Pods-Zaym.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,10 +124,7 @@
 				A7CDF1A92052CB3F006CBECA /* ApiUrl.swift */,
 				A7CDF1BE2052DB4F006CBECA /* Controllers */,
 				A7CDF1972052B094006CBECA /* Main.storyboard */,
-				A7CDF1C12052DF40006CBECA /* ZaymCell.xib */,
-				A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */,
-				A7B22951205314BF00E49B00 /* HistoryCell.swift */,
-				A7B22953205317D900E49B00 /* TransactionCell.swift */,
+				A7E94A71205349FA00FE50C4 /* Views */,
 				A7CDF19A2052B094006CBECA /* Assets.xcassets */,
 				A7CDF19C2052B094006CBECA /* LaunchScreen.storyboard */,
 				A7CDF19F2052B094006CBECA /* Info.plist */,
@@ -141,6 +144,7 @@
 				A7CDF1A72052C92D006CBECA /* Loan.swift */,
 				A7B229492052EC8600E49B00 /* LoanHistory.swift */,
 				A7B2294B2052EC9000E49B00 /* LoanTransaction.swift */,
+				A7E94A7720534D3F00FE50C4 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,8 +153,16 @@
 			isa = PBXGroup;
 			children = (
 				A7CDF1B42052CDD4006CBECA /* LoadVC.swift */,
+				A7E94A7220534A4D00FE50C4 /* User */,
+				A7E94A70205349EB00FE50C4 /* Client */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A7E94A70205349EB00FE50C4 /* Client */ = {
+			isa = PBXGroup;
+			children = (
 				A7CDF1B62052CDE1006CBECA /* ClientAuthVC.swift */,
-				A7CDF1B82052CDEE006CBECA /* UserAuthVC.swift */,
 				A7CDF1BA2052CDFB006CBECA /* ClientRegVC.swift */,
 				A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */,
 				A7B2294D2052EF4200E49B00 /* ClientCreateLoanVC.swift */,
@@ -158,7 +170,28 @@
 				A7B2295520531D6D00E49B00 /* ClientLoanPaymentVC.swift */,
 				A7B2295720533A2400E49B00 /* ClientProfileVC.swift */,
 			);
-			path = Controllers;
+			path = Client;
+			sourceTree = "<group>";
+		};
+		A7E94A71205349FA00FE50C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1C12052DF40006CBECA /* ZaymCell.xib */,
+				A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */,
+				A7B22951205314BF00E49B00 /* HistoryCell.swift */,
+				A7B22953205317D900E49B00 /* TransactionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7E94A7220534A4D00FE50C4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1B82052CDEE006CBECA /* UserAuthVC.swift */,
+				A7E94A7320534A6300FE50C4 /* UserLoansVC.swift */,
+				A7E94A7520534A8300FE50C4 /* UserLoanDetailVC.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		DBCAECAF9B6F9A6C38661EE7 /* Pods */ = {
@@ -308,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E94A7820534D3F00FE50C4 /* User.swift in Sources */,
 				A7CDF1AA2052CB3F006CBECA /* ApiUrl.swift in Sources */,
 				A7B2294C2052EC9000E49B00 /* LoanTransaction.swift in Sources */,
 				A7CDF1C02052DB6E006CBECA /* ClientLoansVC.swift in Sources */,
@@ -317,8 +351,10 @@
 				A7CDF1B72052CDE1006CBECA /* ClientAuthVC.swift in Sources */,
 				A7B229502053045000E49B00 /* ClientLoanDetailVC.swift in Sources */,
 				A7CDF1A62052C7C9006CBECA /* Client.swift in Sources */,
+				A7E94A7420534A6300FE50C4 /* UserLoansVC.swift in Sources */,
 				A7CDF1B12052CDAA006CBECA /* HideKeyboard.swift in Sources */,
 				A7B2294A2052EC8600E49B00 /* LoanHistory.swift in Sources */,
+				A7E94A7620534A8300FE50C4 /* UserLoanDetailVC.swift in Sources */,
 				A7CDF1BB2052CDFB006CBECA /* ClientRegVC.swift in Sources */,
 				A7B2295620531D6D00E49B00 /* ClientLoanPaymentVC.swift in Sources */,
 				A7B2294E2052EF4200E49B00 /* ClientCreateLoanVC.swift in Sources */,

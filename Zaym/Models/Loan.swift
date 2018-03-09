@@ -20,6 +20,7 @@ class Loan:Mappable {
     var id: Int?
     var loan_history: [LoanHistory]?
     var loan_transactions: [LoanTransaction]?
+    var client: Client?
     
     required convenience init?(map: Map) {
         self.init()
@@ -34,6 +35,7 @@ class Loan:Mappable {
         id <- (map["id"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
         loan_history <- map["loan_history"]
         loan_transactions <- map["loan_transactions"]
+        client <- map["client"]
     }
     
     func create () {

@@ -22,7 +22,8 @@ class LoadVC: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ClientVC")
                 self.present(vc!, animated: true, completion: nil)
             } else {
-                
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserVC")
+                self.present(vc!, animated: true, completion: nil)
             }
         } else {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC")

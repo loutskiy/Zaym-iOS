@@ -61,4 +61,8 @@ struct ApiUrl {
     static func getClientById (_ id: Int) -> String {
         return client + "/\(id)"
     }
+    
+    static var userLoans: String {
+        return user + "/loans"
+    }
 }
