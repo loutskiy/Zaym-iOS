@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7B2294A2052EC8600E49B00 /* LoanHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B229492052EC8600E49B00 /* LoanHistory.swift */; };
+		A7B2294C2052EC9000E49B00 /* LoanTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2294B2052EC9000E49B00 /* LoanTransaction.swift */; };
+		A7B2294E2052EF4200E49B00 /* ClientCreateLoanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2294D2052EF4200E49B00 /* ClientCreateLoanVC.swift */; };
+		A7B229502053045000E49B00 /* ClientLoanDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2294F2053045000E49B00 /* ClientLoanDetailVC.swift */; };
+		A7B22952205314BF00E49B00 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B22951205314BF00E49B00 /* HistoryCell.swift */; };
+		A7B22954205317D900E49B00 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B22953205317D900E49B00 /* TransactionCell.swift */; };
+		A7B2295620531D6D00E49B00 /* ClientLoanPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2295520531D6D00E49B00 /* ClientLoanPaymentVC.swift */; };
+		A7B2295820533A2400E49B00 /* ClientProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B2295720533A2400E49B00 /* ClientProfileVC.swift */; };
+		A7CDF1942052B094006CBECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1932052B094006CBECA /* AppDelegate.swift */; };
+		A7CDF1992052B094006CBECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF1972052B094006CBECA /* Main.storyboard */; };
+		A7CDF19B2052B094006CBECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF19A2052B094006CBECA /* Assets.xcassets */; };
+		A7CDF19E2052B094006CBECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF19C2052B094006CBECA /* LaunchScreen.storyboard */; };
+		A7CDF1A62052C7C9006CBECA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1A52052C7C9006CBECA /* Client.swift */; };
+		A7CDF1A82052C92D006CBECA /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1A72052C92D006CBECA /* Loan.swift */; };
+		A7CDF1AA2052CB3F006CBECA /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1A92052CB3F006CBECA /* ApiUrl.swift */; };
+		A7CDF1AF2052CDAA006CBECA /* Checker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1AB2052CDAA006CBECA /* Checker.swift */; };
+		A7CDF1B02052CDAA006CBECA /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1AC2052CDAA006CBECA /* AlertMessage.swift */; };
+		A7CDF1B12052CDAA006CBECA /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1AD2052CDAA006CBECA /* HideKeyboard.swift */; };
+		A7CDF1B22052CDAA006CBECA /* UserCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1AE2052CDAA006CBECA /* UserCache.swift */; };
+		A7CDF1B52052CDD4006CBECA /* LoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1B42052CDD4006CBECA /* LoadVC.swift */; };
+		A7CDF1B72052CDE1006CBECA /* ClientAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1B62052CDE1006CBECA /* ClientAuthVC.swift */; };
+		A7CDF1B92052CDEE006CBECA /* UserAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1B82052CDEE006CBECA /* UserAuthVC.swift */; };
+		A7CDF1BB2052CDFB006CBECA /* ClientRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1BA2052CDFB006CBECA /* ClientRegVC.swift */; };
+		A7CDF1BD2052D1B6006CBECA /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1BC2052D1B6006CBECA /* ViewManager.swift */; };
+		A7CDF1C02052DB6E006CBECA /* ClientLoansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */; };
+		A7CDF1C22052DF40006CBECA /* ZaymCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF1C12052DF40006CBECA /* ZaymCell.xib */; };
+		A7CDF1C42052DFA8006CBECA /* ZaymCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */; };
+		D2C18791B344FD0A9E242A22 /* Pods_Zaym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EC88077F7ABFBF052267E4 /* Pods_Zaym.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72EC88077F7ABFBF052267E4 /* Pods_Zaym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zaym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B229492052EC8600E49B00 /* LoanHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanHistory.swift; sourceTree = "<group>"; };
+		A7B2294B2052EC9000E49B00 /* LoanTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTransaction.swift; sourceTree = "<group>"; };
+		A7B2294D2052EF4200E49B00 /* ClientCreateLoanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCreateLoanVC.swift; sourceTree = "<group>"; };
+		A7B2294F2053045000E49B00 /* ClientLoanDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoanDetailVC.swift; sourceTree = "<group>"; };
+		A7B22951205314BF00E49B00 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		A7B22953205317D900E49B00 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		A7B2295520531D6D00E49B00 /* ClientLoanPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoanPaymentVC.swift; sourceTree = "<group>"; };
+		A7B2295720533A2400E49B00 /* ClientProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProfileVC.swift; sourceTree = "<group>"; };
+		A7CDF1902052B094006CBECA /* Zaym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zaym.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7CDF1932052B094006CBECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7CDF1982052B094006CBECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7CDF19A2052B094006CBECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7CDF19D2052B094006CBECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7CDF19F2052B094006CBECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CDF1A52052C7C9006CBECA /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A7CDF1A72052C92D006CBECA /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		A7CDF1A92052CB3F006CBECA /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
+		A7CDF1AB2052CDAA006CBECA /* Checker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checker.swift; sourceTree = "<group>"; };
+		A7CDF1AC2052CDAA006CBECA /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		A7CDF1AD2052CDAA006CBECA /* HideKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
+		A7CDF1AE2052CDAA006CBECA /* UserCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCache.swift; sourceTree = "<group>"; };
+		A7CDF1B42052CDD4006CBECA /* LoadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadVC.swift; sourceTree = "<group>"; };
+		A7CDF1B62052CDE1006CBECA /* ClientAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAuthVC.swift; sourceTree = "<group>"; };
+		A7CDF1B82052CDEE006CBECA /* UserAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthVC.swift; sourceTree = "<group>"; };
+		A7CDF1BA2052CDFB006CBECA /* ClientRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRegVC.swift; sourceTree = "<group>"; };
+		A7CDF1BC2052D1B6006CBECA /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientLoansVC.swift; sourceTree = "<group>"; };
+		A7CDF1C12052DF40006CBECA /* ZaymCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZaymCell.xib; sourceTree = "<group>"; };
+		A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaymCell.swift; sourceTree = "<group>"; };
+		EBB67EBCEBFAD880E8D782E5 /* Pods-Zaym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zaym.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zaym/Pods-Zaym.release.xcconfig"; sourceTree = "<group>"; };
+		EE6DF3B1047F966728935CD4 /* Pods-Zaym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zaym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zaym/Pods-Zaym.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7CDF18D2052B094006CBECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C18791B344FD0A9E242A22 /* Pods_Zaym.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7ED9315C89F3414894E5532F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72EC88077F7ABFBF052267E4 /* Pods_Zaym.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7CDF1872052B094006CBECA = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1922052B094006CBECA /* Zaym */,
+				A7CDF1912052B094006CBECA /* Products */,
+				DBCAECAF9B6F9A6C38661EE7 /* Pods */,
+				7ED9315C89F3414894E5532F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7CDF1912052B094006CBECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1902052B094006CBECA /* Zaym.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7CDF1922052B094006CBECA /* Zaym */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1932052B094006CBECA /* AppDelegate.swift */,
+				A7CDF1B32052CDBA006CBECA /* Models */,
+				A7CDF1A92052CB3F006CBECA /* ApiUrl.swift */,
+				A7CDF1BE2052DB4F006CBECA /* Controllers */,
+				A7CDF1972052B094006CBECA /* Main.storyboard */,
+				A7CDF1C12052DF40006CBECA /* ZaymCell.xib */,
+				A7CDF1C32052DFA8006CBECA /* ZaymCell.swift */,
+				A7B22951205314BF00E49B00 /* HistoryCell.swift */,
+				A7B22953205317D900E49B00 /* TransactionCell.swift */,
+				A7CDF19A2052B094006CBECA /* Assets.xcassets */,
+				A7CDF19C2052B094006CBECA /* LaunchScreen.storyboard */,
+				A7CDF19F2052B094006CBECA /* Info.plist */,
+				A7CDF1AC2052CDAA006CBECA /* AlertMessage.swift */,
+				A7CDF1AB2052CDAA006CBECA /* Checker.swift */,
+				A7CDF1AD2052CDAA006CBECA /* HideKeyboard.swift */,
+				A7CDF1AE2052CDAA006CBECA /* UserCache.swift */,
+				A7CDF1BC2052D1B6006CBECA /* ViewManager.swift */,
+			);
+			path = Zaym;
+			sourceTree = "<group>";
+		};
+		A7CDF1B32052CDBA006CBECA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1A52052C7C9006CBECA /* Client.swift */,
+				A7CDF1A72052C92D006CBECA /* Loan.swift */,
+				A7B229492052EC8600E49B00 /* LoanHistory.swift */,
+				A7B2294B2052EC9000E49B00 /* LoanTransaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7CDF1BE2052DB4F006CBECA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7CDF1B42052CDD4006CBECA /* LoadVC.swift */,
+				A7CDF1B62052CDE1006CBECA /* ClientAuthVC.swift */,
+				A7CDF1B82052CDEE006CBECA /* UserAuthVC.swift */,
+				A7CDF1BA2052CDFB006CBECA /* ClientRegVC.swift */,
+				A7CDF1BF2052DB6E006CBECA /* ClientLoansVC.swift */,
+				A7B2294D2052EF4200E49B00 /* ClientCreateLoanVC.swift */,
+				A7B2294F2053045000E49B00 /* ClientLoanDetailVC.swift */,
+				A7B2295520531D6D00E49B00 /* ClientLoanPaymentVC.swift */,
+				A7B2295720533A2400E49B00 /* ClientProfileVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBCAECAF9B6F9A6C38661EE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE6DF3B1047F966728935CD4 /* Pods-Zaym.debug.xcconfig */,
+				EBB67EBCEBFAD880E8D782E5 /* Pods-Zaym.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7CDF18F2052B094006CBECA /* Zaym */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7CDF1A22052B094006CBECA /* Build configuration list for PBXNativeTarget "Zaym" */;
+			buildPhases = (
+				B24E3B0DE18C92FA21084342 /* [CP] Check Pods Manifest.lock */,
+				A7CDF18C2052B094006CBECA /* Sources */,
+				A7CDF18D2052B094006CBECA /* Frameworks */,
+				A7CDF18E2052B094006CBECA /* Resources */,
+				1189A4F16AEBD2943C5CA5B4 /* [CP] Embed Pods Frameworks */,
+				5539BA391A8200178D6F923B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zaym;
+			productName = Zaym;
+			productReference = A7CDF1902052B094006CBECA /* Zaym.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7CDF1882052B094006CBECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Mikhail Lutskii";
+				TargetAttributes = {
+					A7CDF18F2052B094006CBECA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A7CDF18B2052B094006CBECA /* Build configuration list for PBXProject "Zaym" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7CDF1872052B094006CBECA;
+			productRefGroup = A7CDF1912052B094006CBECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7CDF18F2052B094006CBECA /* Zaym */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7CDF18E2052B094006CBECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CDF19E2052B094006CBECA /* LaunchScreen.storyboard in Resources */,
+				A7CDF19B2052B094006CBECA /* Assets.xcassets in Resources */,
+				A7CDF1C22052DF40006CBECA /* ZaymCell.xib in Resources */,
+				A7CDF1992052B094006CBECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1189A4F16AEBD2943C5CA5B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zaym/Pods-Zaym-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftPhoneNumberFormatter/SwiftPhoneNumberFormatter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftPhoneNumberFormatter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zaym/Pods-Zaym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5539BA391A8200178D6F923B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zaym/Pods-Zaym-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24E3B0DE18C92FA21084342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zaym-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7CDF18C2052B094006CBECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CDF1AA2052CB3F006CBECA /* ApiUrl.swift in Sources */,
+				A7B2294C2052EC9000E49B00 /* LoanTransaction.swift in Sources */,
+				A7CDF1C02052DB6E006CBECA /* ClientLoansVC.swift in Sources */,
+				A7CDF1C42052DFA8006CBECA /* ZaymCell.swift in Sources */,
+				A7CDF1AF2052CDAA006CBECA /* Checker.swift in Sources */,
+				A7CDF1B52052CDD4006CBECA /* LoadVC.swift in Sources */,
+				A7CDF1B72052CDE1006CBECA /* ClientAuthVC.swift in Sources */,
+				A7B229502053045000E49B00 /* ClientLoanDetailVC.swift in Sources */,
+				A7CDF1A62052C7C9006CBECA /* Client.swift in Sources */,
+				A7CDF1B12052CDAA006CBECA /* HideKeyboard.swift in Sources */,
+				A7B2294A2052EC8600E49B00 /* LoanHistory.swift in Sources */,
+				A7CDF1BB2052CDFB006CBECA /* ClientRegVC.swift in Sources */,
+				A7B2295620531D6D00E49B00 /* ClientLoanPaymentVC.swift in Sources */,
+				A7B2294E2052EF4200E49B00 /* ClientCreateLoanVC.swift in Sources */,
+				A7CDF1BD2052D1B6006CBECA /* ViewManager.swift in Sources */,
+				A7B22954205317D900E49B00 /* TransactionCell.swift in Sources */,
+				A7B2295820533A2400E49B00 /* ClientProfileVC.swift in Sources */,
+				A7B22952205314BF00E49B00 /* HistoryCell.swift in Sources */,
+				A7CDF1A82052C92D006CBECA /* Loan.swift in Sources */,
+				A7CDF1B22052CDAA006CBECA /* UserCache.swift in Sources */,
+				A7CDF1B92052CDEE006CBECA /* UserAuthVC.swift in Sources */,
+				A7CDF1B02052CDAA006CBECA /* AlertMessage.swift in Sources */,
+				A7CDF1942052B094006CBECA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7CDF1972052B094006CBECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7CDF1982052B094006CBECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7CDF19C2052B094006CBECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7CDF19D2052B094006CBECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7CDF1A02052B094006CBECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7CDF1A12052B094006CBECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7CDF1A32052B094006CBECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE6DF3B1047F966728935CD4 /* Pods-Zaym.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = Zaym/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikhaillutskii.Zaym;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7CDF1A42052B094006CBECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB67EBCEBFAD880E8D782E5 /* Pods-Zaym.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = Zaym/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikhaillutskii.Zaym;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7CDF18B2052B094006CBECA /* Build configuration list for PBXProject "Zaym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CDF1A02052B094006CBECA /* Debug */,
+				A7CDF1A12052B094006CBECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7CDF1A22052B094006CBECA /* Build configuration list for PBXNativeTarget "Zaym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CDF1A32052B094006CBECA /* Debug */,
+				A7CDF1A42052B094006CBECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7CDF1882052B094006CBECA /* Project object */;
+}
