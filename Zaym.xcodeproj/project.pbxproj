@@ -25,6 +25,9 @@
 		A7C8EE0020559F2D00660388 /* ClientSupportTicketAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EDFF20559F2D00660388 /* ClientSupportTicketAddVC.swift */; };
 		A7C8EE022055A8E200660388 /* UserSupportTicketsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE012055A8E200660388 /* UserSupportTicketsVC.swift */; };
 		A7C8EE042055ACF100660388 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE032055ACF100660388 /* UserProfileVC.swift */; };
+		A7C8EE062055BE4D00660388 /* SupportTicketAnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE052055BE4D00660388 /* SupportTicketAnswersVC.swift */; };
+		A7C8EE082055BE7700660388 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE072055BE7700660388 /* AnswerCell.swift */; };
+		A7C8EE0A2055BF2000660388 /* SupportAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE092055BF2000660388 /* SupportAnswer.swift */; };
 		A7CDF1942052B094006CBECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1932052B094006CBECA /* AppDelegate.swift */; };
 		A7CDF1992052B094006CBECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF1972052B094006CBECA /* Main.storyboard */; };
 		A7CDF19B2052B094006CBECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF19A2052B094006CBECA /* Assets.xcassets */; };
@@ -70,6 +73,9 @@
 		A7C8EDFF20559F2D00660388 /* ClientSupportTicketAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSupportTicketAddVC.swift; sourceTree = "<group>"; };
 		A7C8EE012055A8E200660388 /* UserSupportTicketsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSupportTicketsVC.swift; sourceTree = "<group>"; };
 		A7C8EE032055ACF100660388 /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
+		A7C8EE052055BE4D00660388 /* SupportTicketAnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTicketAnswersVC.swift; sourceTree = "<group>"; };
+		A7C8EE072055BE7700660388 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		A7C8EE092055BF2000660388 /* SupportAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportAnswer.swift; sourceTree = "<group>"; };
 		A7CDF1902052B094006CBECA /* Zaym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zaym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CDF1932052B094006CBECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CDF1982052B094006CBECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 				A7E94A7720534D3F00FE50C4 /* User.swift */,
 				A7C8EDF120558DBB00660388 /* Support.swift */,
 				A7C8EDFD20559BDE00660388 /* SupportTicket.swift */,
+				A7C8EE092055BF2000660388 /* SupportAnswer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				A7CDF1B42052CDD4006CBECA /* LoadVC.swift */,
+				A7C8EE052055BE4D00660388 /* SupportTicketAnswersVC.swift */,
 				A7E94A7220534A4D00FE50C4 /* User */,
 				A7E94A70205349EB00FE50C4 /* Client */,
 			);
@@ -206,6 +214,7 @@
 				A7B22953205317D900E49B00 /* TransactionCell.swift */,
 				A7C8EDF7205591E900660388 /* SupportCell.swift */,
 				A7C8EDF920559AB500660388 /* ClientSupportCell.swift */,
+				A7C8EE072055BE7700660388 /* AnswerCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,10 +393,12 @@
 				A7B229502053045000E49B00 /* ClientLoanDetailVC.swift in Sources */,
 				A7CDF1A62052C7C9006CBECA /* Client.swift in Sources */,
 				A7C8EDF6205590BC00660388 /* UserSupportAddVC.swift in Sources */,
+				A7C8EE062055BE4D00660388 /* SupportTicketAnswersVC.swift in Sources */,
 				A7C8EE022055A8E200660388 /* UserSupportTicketsVC.swift in Sources */,
 				A7E94A7420534A6300FE50C4 /* UserLoansVC.swift in Sources */,
 				A7C8EDF420558EF700660388 /* UserSupportVC.swift in Sources */,
 				A7CDF1B12052CDAA006CBECA /* HideKeyboard.swift in Sources */,
+				A7C8EE0A2055BF2000660388 /* SupportAnswer.swift in Sources */,
 				A7B2294A2052EC8600E49B00 /* LoanHistory.swift in Sources */,
 				A7E94A7620534A8300FE50C4 /* UserLoanDetailVC.swift in Sources */,
 				A7CDF1BB2052CDFB006CBECA /* ClientRegVC.swift in Sources */,
@@ -399,6 +410,7 @@
 				A7CDF1BD2052D1B6006CBECA /* ViewManager.swift in Sources */,
 				A7C8EDFA20559AB500660388 /* ClientSupportCell.swift in Sources */,
 				A7B22954205317D900E49B00 /* TransactionCell.swift in Sources */,
+				A7C8EE082055BE7700660388 /* AnswerCell.swift in Sources */,
 				A7B2295820533A2400E49B00 /* ClientProfileVC.swift in Sources */,
 				A7B22952205314BF00E49B00 /* HistoryCell.swift in Sources */,
 				A7CDF1A82052C92D006CBECA /* Loan.swift in Sources */,

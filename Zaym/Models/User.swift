@@ -51,5 +51,14 @@ class User:Mappable {
             }
         }
     }
-
+    func update () {
+        Alamofire.request(ApiUrl.userById(UserCache.userId()), method: .post, parameters: Mapper().toJSON(self)).validate(statusCode: 200..<300).responseObject { (response: DataResponse<User>) in
+            switch response.result {
+            case .success:
+                print("success")
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

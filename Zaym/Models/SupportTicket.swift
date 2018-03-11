@@ -47,4 +47,10 @@ class SupportTicket:Mappable {
             }
         }
     }
+    
+    func delete () {
+        Alamofire.request(ApiUrl.deleteTicketById(id!), method: .delete, parameters: Mapper().toJSON(self)).validate(statusCode: 200..<300).response { (response) in
+            
+        }
+    }
 }

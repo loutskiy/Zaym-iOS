@@ -57,4 +57,20 @@ class ClientProfileVC: UITableViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func editAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Изменение пароля", message: "Введите ниже новый пароль для своего аккаунта", preferredStyle: .alert)
+        let update = UIAlertAction(title: "Изменить", style: .default) { (action) in
+            self.client?.password = alert.textFields?.first?.text
+            self.client?.update()
+        }
+        let cancel = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        alert.addAction(update)
+        alert.addAction(cancel)
+        
+        alert.addTextField { (textField) in
+            textField.placeholder = "Новый пароль"
+            textField.isSecureTextEntry = true
+        }
+        present(alert, animated: true, completion: nil)
+    }
 }

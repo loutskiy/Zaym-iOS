@@ -66,6 +66,10 @@ struct ApiUrl {
         return user + "/\(id)/get"
     }
     
+    static func userById (_ id: Int) -> String {
+        return user + "/\(id)"
+    }
+    
     static var userLoans: String {
         return user + "/loans"
     }
@@ -88,5 +92,21 @@ struct ApiUrl {
     
     static func getTicketsForSupportId(_ id: Int) -> String {
         return support + "/\(id)/tickets"
+    }
+    
+    static func getTicketById(_ id: Int) -> String {
+        return support + "/ticket/\(id)"
+    }
+    
+    static func addAnswerToTicketId(_ id: Int) -> String {
+        return support + "/ticket/\(id)/addAnswer"
+    }
+    
+    static func deleteTicketById(_ id: Int) -> String {
+        return support + "/ticket/\(id)"
+    }
+    
+    static func deleteAnswerById(_ id: Int, ticketId: Int) -> String {
+        return support + "/ticket/\(ticketId)/answer/\(id)"
     }
 }

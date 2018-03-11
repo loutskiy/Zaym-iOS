@@ -59,6 +59,13 @@ class UserSupportTicketsVC: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ticket = tickets[indexPath.row]
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SupportTicketAnswersVC") as! SupportTicketAnswersVC
+        vc.ticket = ticket
+        navigationController?.pushViewController(vc, animated: true)
+    }
 
 
     /*
