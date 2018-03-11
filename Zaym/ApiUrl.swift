@@ -62,7 +62,31 @@ struct ApiUrl {
         return client + "/\(id)"
     }
     
+    static func getUserById (_ id: Int) -> String {
+        return user + "/\(id)/get"
+    }
+    
     static var userLoans: String {
         return user + "/loans"
+    }
+    
+    static var support: String {
+        return BaseURL + "support"
+    }
+    
+    static var addSupport: String {
+        return support + "/add"
+    }
+    
+    static func getSupportTicketsByClientId(_ clientId: Int) -> String {
+        return client + "/\(clientId)/support"
+    }
+    
+    static func addSupportTicket(clientId: Int, supportId: Int) -> String {
+        return client + "/\(clientId)/support/\(supportId)/add"
+    }
+    
+    static func getTicketsForSupportId(_ id: Int) -> String {
+        return support + "/\(id)/tickets"
     }
 }

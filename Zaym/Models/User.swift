@@ -25,7 +25,7 @@ class User:Mappable {
     func mapping(map: Map) {
         id <- (map["id"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
         name <- map["name"]
-        role <- (map["email"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
+        role <- (map["role"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
         password <- map["password"]
         login <- map["login"]
     }
