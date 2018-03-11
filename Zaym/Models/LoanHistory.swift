@@ -29,4 +29,16 @@ class LoanHistory:Mappable {
         date <- map["date"]
         id <- (map["id"], TransformOf<Int, String>(fromJSON: { Int($0!) }, toJSON: { $0.map { String($0) } }))
     }
+    
+    func add () {
+        Alamofire.request(ApiUrl.addStatusLoan(loanId:loan_id!), method: .post, parameters: Mapper().toJSON(self)).validate(statusCode: 200..<300).responseObject { (response: DataResponse<LoanHistory>) in
+            switch response.result {
+            case .success:
+                ViewManager.topViewController().navigationController?.popViewController(animated: true)
+                print("Validation Successful")
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

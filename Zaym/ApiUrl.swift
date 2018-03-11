@@ -109,4 +109,8 @@ struct ApiUrl {
     static func deleteAnswerById(_ id: Int, ticketId: Int) -> String {
         return support + "/ticket/\(ticketId)/answer/\(id)"
     }
+    
+    static func addStatusLoan( loanId: Int) -> String {
+        return loan + "/\(loanId)/addStatus"
+    }
 }

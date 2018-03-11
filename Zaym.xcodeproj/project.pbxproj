@@ -28,6 +28,8 @@
 		A7C8EE062055BE4D00660388 /* SupportTicketAnswersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE052055BE4D00660388 /* SupportTicketAnswersVC.swift */; };
 		A7C8EE082055BE7700660388 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE072055BE7700660388 /* AnswerCell.swift */; };
 		A7C8EE0A2055BF2000660388 /* SupportAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE092055BF2000660388 /* SupportAnswer.swift */; };
+		A7C8EE0C2055DBA400660388 /* LoanStatuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE0B2055DBA400660388 /* LoanStatuses.swift */; };
+		A7C8EE0E2055DC4D00660388 /* UserAddLoanStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C8EE0D2055DC4D00660388 /* UserAddLoanStatusVC.swift */; };
 		A7CDF1942052B094006CBECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDF1932052B094006CBECA /* AppDelegate.swift */; };
 		A7CDF1992052B094006CBECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF1972052B094006CBECA /* Main.storyboard */; };
 		A7CDF19B2052B094006CBECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CDF19A2052B094006CBECA /* Assets.xcassets */; };
@@ -76,6 +78,8 @@
 		A7C8EE052055BE4D00660388 /* SupportTicketAnswersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportTicketAnswersVC.swift; sourceTree = "<group>"; };
 		A7C8EE072055BE7700660388 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		A7C8EE092055BF2000660388 /* SupportAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportAnswer.swift; sourceTree = "<group>"; };
+		A7C8EE0B2055DBA400660388 /* LoanStatuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStatuses.swift; sourceTree = "<group>"; };
+		A7C8EE0D2055DC4D00660388 /* UserAddLoanStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddLoanStatusVC.swift; sourceTree = "<group>"; };
 		A7CDF1902052B094006CBECA /* Zaym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zaym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CDF1932052B094006CBECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CDF1982052B094006CBECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				A7CDF1932052B094006CBECA /* AppDelegate.swift */,
 				A7CDF1B32052CDBA006CBECA /* Models */,
 				A7CDF1A92052CB3F006CBECA /* ApiUrl.swift */,
+				A7C8EE0B2055DBA400660388 /* LoanStatuses.swift */,
 				A7CDF1BE2052DB4F006CBECA /* Controllers */,
 				A7CDF1972052B094006CBECA /* Main.storyboard */,
 				A7E94A71205349FA00FE50C4 /* Views */,
@@ -229,6 +234,7 @@
 				A7C8EDF5205590BC00660388 /* UserSupportAddVC.swift */,
 				A7C8EE012055A8E200660388 /* UserSupportTicketsVC.swift */,
 				A7C8EE032055ACF100660388 /* UserProfileVC.swift */,
+				A7C8EE0D2055DC4D00660388 /* UserAddLoanStatusVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				A7C8EE022055A8E200660388 /* UserSupportTicketsVC.swift in Sources */,
 				A7E94A7420534A6300FE50C4 /* UserLoansVC.swift in Sources */,
 				A7C8EDF420558EF700660388 /* UserSupportVC.swift in Sources */,
+				A7C8EE0E2055DC4D00660388 /* UserAddLoanStatusVC.swift in Sources */,
 				A7CDF1B12052CDAA006CBECA /* HideKeyboard.swift in Sources */,
 				A7C8EE0A2055BF2000660388 /* SupportAnswer.swift in Sources */,
 				A7B2294A2052EC8600E49B00 /* LoanHistory.swift in Sources */,
@@ -407,6 +414,7 @@
 				A7B2294E2052EF4200E49B00 /* ClientCreateLoanVC.swift in Sources */,
 				A7C8EE042055ACF100660388 /* UserProfileVC.swift in Sources */,
 				A7C8EDF220558DBB00660388 /* Support.swift in Sources */,
+				A7C8EE0C2055DBA400660388 /* LoanStatuses.swift in Sources */,
 				A7CDF1BD2052D1B6006CBECA /* ViewManager.swift in Sources */,
 				A7C8EDFA20559AB500660388 /* ClientSupportCell.swift in Sources */,
 				A7B22954205317D900E49B00 /* TransactionCell.swift in Sources */,

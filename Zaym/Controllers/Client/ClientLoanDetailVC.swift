@@ -40,7 +40,7 @@ class ClientLoanDetailVC: UITableViewController {
         if loan?.loan_history!.count == 0 {
             statusLabel.text = "На рассмотрении"
         } else {
-            
+            statusLabel.text = LoanStatuses.all[(loan?.loan_history![0].status)!]
         }
         
         let addPayment = UIBarButtonItem(title: "Погасить", style: .done, target: self, action: #selector(addPaymentAction))
@@ -84,7 +84,7 @@ class ClientLoanDetailVC: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell", for: indexPath) as! HistoryCell
             cell.dateLabel.text = "Дата: \(history?.date ?? "")"
 
-            // Configure the cell...
+            cell.nameLabel.text = LoanStatuses.all[(loan?.loan_history![indexPath.row].status)!]
 
             return cell
         } else {

@@ -58,7 +58,12 @@ class UserLoansVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ZaymCell", for: indexPath) as! ZaymCell
         cell.sumLabel.text = "\(loan.sum ?? 0)₽"
         cell.nameLabel.text = loan.client?.name
-        
+        if loan.loan_history!.count == 0 {
+            cell.statusLabel.text = "На рассмотрении"
+        } else {
+            cell.statusLabel.text = LoanStatuses.all[(loan.loan_history![0].status)!]
+        }
+        cell.dateLabel.text = loan.date_issue
         // Configure the cell...
         
         return cell
@@ -66,7 +71,7 @@ class UserLoansVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let loan = loans[indexPath.row]
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ClientLoanDetailVC") as! ClientLoanDetailVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "UserLoanDetailVC") as! UserLoanDetailVC
         vc.loan = loan
         self.navigationController?.pushViewController(vc, animated: true)
     }

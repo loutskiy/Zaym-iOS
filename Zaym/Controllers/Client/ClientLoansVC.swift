@@ -58,6 +58,12 @@ class ClientLoansVC: UITableViewController {
         let loan = loans[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ZaymCell", for: indexPath) as! ZaymCell
         cell.sumLabel.text = "\(loan.sum ?? 0)₽"
+        if loan.loan_history!.count == 0 {
+            cell.statusLabel.text = "На рассмотрении"
+        } else {
+            cell.statusLabel.text = LoanStatuses.all[(loan.loan_history![0].status)!]
+        }
+        cell.dateLabel.text = loan.date_issue
         // Configure the cell...
 
         return cell
